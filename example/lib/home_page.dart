@@ -28,9 +28,9 @@ class _HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.all(Radius.circular(4)),
               ),
               onPressed: () async {
-                print('222222222');
-                await Future.delayed(const Duration(seconds: 2));
                 print('111111111');
+                await Future.delayed(const Duration(seconds: 2));
+                print('222222222');
               },
             ),
             Container(
