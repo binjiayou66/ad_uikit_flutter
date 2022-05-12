@@ -1,180 +1,1232 @@
 import 'dart:ui' as ui show TextHeightBehavior;
-import 'package:ad_uikit_flutter/config/ad_config.dart';
+import 'package:ad_uikit_flutter/text_style/ad_text_style.dart';
 import 'package:flutter/material.dart';
 
-class ADText extends StatelessWidget {
-  final String? data;
-  final InlineSpan? textSpan;
-  final TextStyle? style;
-  final StrutStyle? strutStyle;
-  final TextAlign? textAlign;
-  final TextDirection? textDirection;
-  final Locale? locale;
-  final bool? softWrap;
-  final TextOverflow? overflow;
-  final double? textScaleFactor;
-  final int? maxLines;
-  final String? semanticsLabel;
-  final TextWidthBasis? textWidthBasis;
-  final ui.TextHeightBehavior? textHeightBehavior;
-
+/// Shortcut enum:
+///
+/// defualt
+/// rich
+///
+/// title1Black1
+/// title1Black1Bold
+/// title1White
+/// title1WhiteBold
+///
+/// title2Black1
+/// title2Black1Bold
+/// title2White
+/// title2WhiteBold
+///
+/// content1Black1
+/// content1Black1Bold
+/// content1Black2
+/// content1Black3
+/// content1Black4
+/// content1White
+/// content1WhiteBold
+///
+/// content2Black1
+/// content2Black1Bold
+/// content2Black2
+/// content2Black3
+/// content2Black4
+/// content2White
+/// content2WhiteBold
+///
+/// tip1Black1
+/// tip1Black1Bold
+/// tip1Black2
+/// tip1Black3
+/// tip1Black4
+/// tip1White
+/// tip1WhiteBold
+///
+/// tip2Black1
+/// tip2Black1Bold
+/// tip2Black2
+/// tip2Black3
+/// tip2Black4
+/// tip2White
+/// tip2WhiteBold
+///
+class ADText extends Text {
   const ADText(
-    String this.data, {
+    String data, {
     Key? key,
-    this.style,
-    this.strutStyle,
-    this.textAlign,
-    this.textDirection,
-    this.locale,
-    this.softWrap,
-    this.overflow,
-    this.textScaleFactor,
-    this.maxLines,
-    this.semanticsLabel,
-    this.textWidthBasis,
-    this.textHeightBehavior,
-  })  : textSpan = null,
-        super(key: key);
+    TextStyle? style,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: style,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 
   const ADText.rich(
-    InlineSpan this.textSpan, {
+    InlineSpan textSpan, {
     Key? key,
-    this.style,
-    this.strutStyle,
-    this.textAlign,
-    this.textDirection,
-    this.locale,
-    this.softWrap,
-    this.overflow,
-    this.textScaleFactor,
-    this.maxLines,
-    this.semanticsLabel,
-    this.textWidthBasis,
-    this.textHeightBehavior,
-  })  : data = null,
-        super(key: key);
+    TextStyle? style,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super.rich(
+          textSpan,
+          style: style,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 
-  ADText.title1Main(
-    InlineSpan this.textSpan, {
+  ADText.title1Black1(
+    String data, {
     Key? key,
-    this.strutStyle,
-    this.textAlign,
-    this.textDirection,
-    this.locale,
-    this.softWrap,
-    this.overflow,
-    this.textScaleFactor,
-    this.maxLines,
-    this.semanticsLabel,
-    this.textWidthBasis,
-    this.textHeightBehavior,
-  })  : data = null,
-        style = TextStyle(
-          color: ADConfig.fontColorMain,
-          fontSize: ADConfig.fontSizeTitle1,
-          fontWeight: ADConfig.fontWeightNormal,
-        ),
-        super(key: key);
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title1Black1,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 
-  ADText.title2Main(
-    InlineSpan this.textSpan, {
+  ADText.title1Black1Bold(
+    String data, {
     Key? key,
-    this.strutStyle,
-    this.textAlign,
-    this.textDirection,
-    this.locale,
-    this.softWrap,
-    this.overflow,
-    this.textScaleFactor,
-    this.maxLines,
-    this.semanticsLabel,
-    this.textWidthBasis,
-    this.textHeightBehavior,
-  })  : data = null,
-        style = TextStyle(
-          color: ADConfig.fontColorMain,
-          fontSize: ADConfig.fontSizeTitle2,
-          fontWeight: ADConfig.fontWeightNormal,
-        ),
-        super(key: key);
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title1Black1Bold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 
-  ADText.title1MainBold(
-    InlineSpan this.textSpan, {
+  ADText.title1White(
+    String data, {
     Key? key,
-    this.strutStyle,
-    this.textAlign,
-    this.textDirection,
-    this.locale,
-    this.softWrap,
-    this.overflow,
-    this.textScaleFactor,
-    this.maxLines,
-    this.semanticsLabel,
-    this.textWidthBasis,
-    this.textHeightBehavior,
-  })  : data = null,
-        style = TextStyle(
-          color: ADConfig.fontColorMain,
-          fontSize: ADConfig.fontSizeTitle1,
-          fontWeight: ADConfig.fontWeightBold,
-        ),
-        super(key: key);
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title1White,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 
-  ADText.title2MainBold(
-    InlineSpan this.textSpan, {
+  ADText.title1WhiteBold(
+    String data, {
     Key? key,
-    this.strutStyle,
-    this.textAlign,
-    this.textDirection,
-    this.locale,
-    this.softWrap,
-    this.overflow,
-    this.textScaleFactor,
-    this.maxLines,
-    this.semanticsLabel,
-    this.textWidthBasis,
-    this.textHeightBehavior,
-  })  : data = null,
-        style = TextStyle(
-          color: ADConfig.fontColorMain,
-          fontSize: ADConfig.fontSizeTitle2,
-          fontWeight: ADConfig.fontWeightBold,
-        ),
-        super(key: key);
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title1WhiteBold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 
-  @override
-  Widget build(BuildContext context) {
-    if (data == null) {
-      return Text.rich(
-        textSpan ?? const TextSpan(text: ''),
-        style: style,
-        strutStyle: strutStyle,
-        textAlign: textAlign,
-        textDirection: textDirection,
-        locale: locale,
-        softWrap: softWrap,
-        overflow: overflow,
-        textScaleFactor: textScaleFactor,
-        maxLines: maxLines,
-        semanticsLabel: semanticsLabel,
-        textWidthBasis: textWidthBasis,
-        textHeightBehavior: textHeightBehavior,
-      );
-    }
-    return Text(
-      data ?? '',
-      style: style,
-      strutStyle: strutStyle,
-      textAlign: textAlign,
-      textDirection: textDirection,
-      locale: locale,
-      softWrap: softWrap,
-      overflow: overflow,
-      textScaleFactor: textScaleFactor,
-      maxLines: maxLines,
-      semanticsLabel: semanticsLabel,
-      textWidthBasis: textWidthBasis,
-      textHeightBehavior: textHeightBehavior,
-    );
-  }
+  ADText.title2Black1(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title2Black1,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.title2Black1Bold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title2Black1Bold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.title2White(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title2White,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.title2WhiteBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.title2WhiteBold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1Black1(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1Black1,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1Black1Bold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1Black1Bold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1Black2(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1Black2,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1Black3(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1Black3,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1Black4(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1Black4,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1White(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1White,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1WhiteBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content1WhiteBold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2Black1(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2Black1,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2Black1Bold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2Black1Bold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2Black2(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2Black2,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2Black3(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2Black3,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2Black4(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2Black4,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2White(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2White,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2WhiteBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.content2WhiteBold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1Black1(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Black1,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1Black1Bold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Black1Bold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1Black2(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Black2,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1Black3(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Black3,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1Black4(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Black4,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1White(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1White,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1WhiteBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1WhiteBold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2Black1(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2Black1,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2Black1Bold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2Black1Bold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2Black2(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2Black2,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2Black3(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2Black3,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2Black4(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2Black4,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2White(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2White,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2WhiteBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2WhiteBold,
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
 }

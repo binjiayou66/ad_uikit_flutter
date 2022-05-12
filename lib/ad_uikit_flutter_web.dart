@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 /// A web implementation of the AdUikitFlutter plugin.
-class ADUIKitFlutterWeb {
+class AdUikitFlutterWeb {
   static void registerWith(Registrar registrar) {
     final MethodChannel channel = MethodChannel(
       'ad_uikit_flutter',
@@ -17,7 +17,7 @@ class ADUIKitFlutterWeb {
       registrar,
     );
 
-    final pluginInstance = ADUIKitFlutterWeb();
+    final pluginInstance = AdUikitFlutterWeb();
     channel.setMethodCallHandler(pluginInstance.handleMethodCall);
   }
 
