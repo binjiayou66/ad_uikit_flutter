@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             ADPlainButton(
               text: '防抖文本按钮',
               height: 44,
-              textStyle: ADTextStyle.content2White,
+              textStyle: ADTextStyle.content2White(),
               decoration: const BoxDecoration(
                 color: ADColors.primary,
                 borderRadius: BorderRadius.all(Radius.circular(4)),
