@@ -13,9 +13,9 @@ class ADConfig {
   static double fontSizeContent2 = ADFontSize.content2;
   static double fontSizeTip1 = ADFontSize.tip1;
   static double fontSizeTip2 = ADFontSize.tip2;
-  static Color fontColorBlack1 = ADColors.textMain;
-  static Color fontColorBlack2 = ADColors.textSub;
-  static Color fontColorBlack3 = ADColors.textTips;
-  static Color fontColorBlack4 = ADColors.textInfo;
+  static Color fontColorBlack = ADColors.textBlack;
+  static Color fontColorDark = ADColors.textDark;
+  static Color fontColorGray = ADColors.textGray;
+  static Color fontColorLight = ADColors.textLight;
   static Color fontColorWhite = ADColors.white;
 }

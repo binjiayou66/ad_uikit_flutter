@@ -56,16 +56,16 @@ class ADColors {
   static const Color text5 = Color(0xFFD6D6D6);
 
   /// 262626
-  static const Color textMain = Color(0xFF262626);
+  static const Color textBlack = Color(0xFF262626);
 
   /// 595959
-  static const Color textSub = Color(0xFF595959);
+  static const Color textDark = Color(0xFF595959);
 
   /// 8C8C8C
-  static const Color textInfo = Color(0xFF8C8C8C);
+  static const Color textGray = Color(0xFF8C8C8C);
 
   /// BFBFBF
-  static const Color textTips = Color(0xFFBFBFBF);
+  static const Color textLight = Color(0xFFBFBFBF);
 
   /// D6D6D6
   static const Color textDisable = Color(0xFFD6D6D6);

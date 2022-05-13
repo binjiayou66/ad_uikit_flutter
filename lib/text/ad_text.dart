@@ -7,45 +7,45 @@ import 'package:flutter/material.dart';
 /// defualt
 /// rich
 ///
-/// title1Black1
-/// title1Black1Bold
+/// title1Black
+/// title1BlackBold
 /// title1White
 /// title1WhiteBold
 ///
-/// title2Black1
-/// title2Black1Bold
+/// title2Black
+/// title2BlackBold
 /// title2White
 /// title2WhiteBold
 ///
-/// content1Black1
-/// content1Black1Bold
-/// content1Black2
-/// content1Black3
-/// content1Black4
+/// content1Black
+/// content1BlackBold
+/// content1Dark
+/// content1Gray
+/// content1Light
 /// content1White
 /// content1WhiteBold
 ///
-/// content2Black1
-/// content2Black1Bold
-/// content2Black2
-/// content2Black3
-/// content2Black4
+/// content2Black
+/// content2BlackBold
+/// content2Dark
+/// content2Gray
+/// content2Light
 /// content2White
 /// content2WhiteBold
 ///
-/// tip1Black1
-/// tip1Black1Bold
-/// tip1Black2
-/// tip1Black3
-/// tip1Black4
+/// tip1Black
+/// tip1BlackBold
+/// tip1Dark
+/// tip1Gray
+/// tip1Light
 /// tip1White
 /// tip1WhiteBold
 ///
-/// tip2Black1
-/// tip2Black1Bold
-/// tip2Black2
-/// tip2Black3
-/// tip2Black4
+/// tip2Black
+/// tip2BlackBold
+/// tip2Dark
+/// tip2Gray
+/// tip2Light
 /// tip2White
 /// tip2WhiteBold
 ///
@@ -114,7 +114,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.title1Black1(
+  ADText.title1Black(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -130,7 +130,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.title1Black1,
+          style: ADTextStyle.title1Black,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -145,7 +145,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.title1Black1Bold(
+  ADText.title1BlackBold(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -161,7 +161,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.title1Black1Bold,
+          style: ADTextStyle.title1BlackBold,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -238,7 +238,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.title2Black1(
+  ADText.title2Black(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -254,7 +254,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.title2Black1,
+          style: ADTextStyle.title2Black,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -269,7 +269,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.title2Black1Bold(
+  ADText.title2BlackBold(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -285,7 +285,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.title2Black1Bold,
+          style: ADTextStyle.title2BlackBold,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -362,7 +362,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content1Black1(
+  ADText.content1Black(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -378,7 +378,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content1Black1,
+          style: ADTextStyle.content1Black,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -393,7 +393,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content1Black1Bold(
+  ADText.content1BlackBold(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -409,7 +409,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content1Black1Bold,
+          style: ADTextStyle.content1BlackBold,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -424,7 +424,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content1Black2(
+  ADText.content1Dark(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -440,7 +440,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content1Black2,
+          style: ADTextStyle.content1Dark,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -455,7 +455,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content1Black3(
+  ADText.content1Gray(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -471,7 +471,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content1Black3,
+          style: ADTextStyle.content1Gray,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -486,7 +486,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content1Black4(
+  ADText.content1Light(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -502,7 +502,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content1Black4,
+          style: ADTextStyle.content1Light,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -579,7 +579,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content2Black1(
+  ADText.content2Black(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -595,7 +595,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content2Black1,
+          style: ADTextStyle.content2Black,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -610,7 +610,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content2Black1Bold(
+  ADText.content2BlackBold(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -626,7 +626,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content2Black1Bold,
+          style: ADTextStyle.content2BlackBold,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -641,7 +641,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content2Black2(
+  ADText.content2Dark(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -657,7 +657,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content2Black2,
+          style: ADTextStyle.content2Dark,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -672,7 +672,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content2Black3(
+  ADText.content2Gray(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -688,7 +688,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content2Black3,
+          style: ADTextStyle.content2Gray,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -703,7 +703,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.content2Black4(
+  ADText.content2Light(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -719,7 +719,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.content2Black4,
+          style: ADTextStyle.content2Light,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -796,7 +796,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip1Black1(
+  ADText.tip1Black(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -812,7 +812,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip1Black1,
+          style: ADTextStyle.tip1Black,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -827,7 +827,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip1Black1Bold(
+  ADText.tip1BlackBold(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -843,7 +843,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip1Black1Bold,
+          style: ADTextStyle.tip1BlackBold,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -858,7 +858,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip1Black2(
+  ADText.tip1Dark(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -874,7 +874,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip1Black2,
+          style: ADTextStyle.tip1Dark,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -889,7 +889,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip1Black3(
+  ADText.tip1Gray(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -905,7 +905,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip1Black3,
+          style: ADTextStyle.tip1Gray,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -920,7 +920,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip1Black4(
+  ADText.tip1Light(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -936,7 +936,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip1Black4,
+          style: ADTextStyle.tip1Light,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1013,7 +1013,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip2Black1(
+  ADText.tip2Black(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -1029,7 +1029,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip2Black1,
+          style: ADTextStyle.tip2Black,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1044,7 +1044,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip2Black1Bold(
+  ADText.tip2BlackBold(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -1060,7 +1060,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip2Black1Bold,
+          style: ADTextStyle.tip2BlackBold,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1075,7 +1075,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip2Black2(
+  ADText.tip2Dark(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -1091,7 +1091,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip2Black2,
+          style: ADTextStyle.tip2Dark,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1106,7 +1106,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip2Black3(
+  ADText.tip2Gray(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -1122,7 +1122,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip2Black3,
+          style: ADTextStyle.tip2Gray,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1137,7 +1137,7 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
-  ADText.tip2Black4(
+  ADText.tip2Light(
     String data, {
     Key? key,
     StrutStyle? strutStyle,
@@ -1153,7 +1153,7 @@ class ADText extends Text {
     ui.TextHeightBehavior? textHeightBehavior,
   }) : super(
           data,
-          style: ADTextStyle.tip2Black4,
+          style: ADTextStyle.tip2Light,
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,

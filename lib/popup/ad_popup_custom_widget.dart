@@ -63,7 +63,7 @@ class ADPopUpCustomWidget extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: ADFontSize.title2,
-                    color: ADColors.textMain,
+                    color: ADColors.textBlack,
                     fontWeight: ADFontWeight.bold,
                   ),
                 ),

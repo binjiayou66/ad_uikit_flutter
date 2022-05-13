@@ -115,7 +115,7 @@ class _ADPopUpTextFieldWidgetState extends State<ADPopUpTextFieldWidget> {
                 maxLines: 1,
                 style: const TextStyle(
                   fontSize: ADFontSize.content2,
-                  color: ADColors.textMain,
+                  color: ADColors.textBlack,
                 ),
                 onChanged: (text) => _text = text,
                 onSubmitted: (_) {
@@ -132,7 +132,7 @@ class _ADPopUpTextFieldWidgetState extends State<ADPopUpTextFieldWidget> {
                   hintText: widget.hintText ?? '请填写',
                   hintStyle: const TextStyle(
                     fontSize: ADFontSize.content2,
-                    color: ADColors.textInfo,
+                    color: ADColors.textLight,
                   ),
                   border: InputBorder.none,
                 ),
