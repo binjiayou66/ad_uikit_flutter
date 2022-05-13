@@ -1,4 +1,5 @@
 import 'package:ad_uikit_flutter/color/ad_color.dart';
+import 'package:ad_uikit_flutter/text/ad_text.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'ad_popup_custom_widget.dart';
@@ -120,10 +121,7 @@ class _ADPopUpPickerWidgetState extends State<ADPopUpPickerWidget> {
     return Container(
       height: 44,
       alignment: Alignment.center,
-      child: Text(
-        title,
-        style: const TextStyle(),
-      ),
+      child: ADText.content1Black(title),
     );
   }
 }

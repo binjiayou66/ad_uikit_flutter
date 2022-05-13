@@ -1,5 +1,6 @@
 import 'package:ad_uikit_flutter/color/ad_color.dart';
 import 'package:ad_uikit_flutter/font/ad_font_size.dart';
+import 'package:ad_uikit_flutter/text_style/ad_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -113,10 +114,7 @@ class _ADPopUpTextFieldWidgetState extends State<ADPopUpTextFieldWidget> {
                 controller: _textfieldController,
                 focusNode: _focusNode,
                 maxLines: 1,
-                style: const TextStyle(
-                  fontSize: ADFontSize.content2,
-                  color: ADColors.textBlack,
-                ),
+                style: ADTextStyle.content1Black(),
                 onChanged: (text) => _text = text,
                 onSubmitted: (_) {
                   Navigator.maybePop(context);

@@ -37,6 +37,19 @@ class _HomePageState extends State<HomePage> {
               height: 44,
               child: ADTextField(),
             ),
+            ADPlainButton(
+              text: 'Popup',
+              height: 44,
+              onPressed: () {
+                ADPopup.popChecker(
+                  context,
+                  leadingTitle: '取消',
+                  title: '航海王',
+                  tailTitle: '确定',
+                  data: ['路飞', '香吉士', '娜美'],
+                );
+              },
+            ),
           ],
         ),
       ),

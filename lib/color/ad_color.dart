@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 
 class ADColors {
   /// 1E8DFF
-  static const Color brandBlue = Color(0xFF1E8DFF);
-
-  /// 3296FA
-  static const Color primary = Color(0xFF3296FA);
+  static const Color primary = Color(0xFF1E8DFF);
 
   /// 2C86E0
   static const Color primaryHighLight = Color(0xFF2C86E0);

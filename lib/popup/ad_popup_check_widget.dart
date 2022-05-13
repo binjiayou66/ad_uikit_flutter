@@ -1,5 +1,6 @@
 import 'package:ad_uikit_flutter/button/ad_plain_button.dart';
 import 'package:ad_uikit_flutter/color/ad_color.dart';
+import 'package:ad_uikit_flutter/config/ad_config.dart';
 import 'package:flutter/material.dart';
 
 import 'ad_popup_custom_widget.dart';
@@ -109,7 +110,7 @@ class _ADPopUpCheckWidgetState extends State<ADPopUpCheckWidget> {
             decoration: BoxDecoration(
               border: Border.all(
                 width: checked ? 1 : 0.5,
-                color: checked ? ADColors.primary : ADColors.divider,
+                color: checked ? ADConfig.primary : ADColors.divider,
               ),
               borderRadius: BorderRadius.circular(4),
             ),
@@ -139,10 +140,10 @@ class _ADPopUpCheckWidgetState extends State<ADPopUpCheckWidget> {
             },
           ),
           if (checked)
-            const Icon(
+            Icon(
               Icons.check_box,
               size: 10,
-              color: ADColors.primary,
+              color: ADConfig.primary,
             ),
         ],
         alignment: Alignment.bottomRight,

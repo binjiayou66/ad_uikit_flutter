@@ -1,3 +1,4 @@
+import 'package:ad_uikit_flutter/color/ad_color.dart';
 import 'package:flutter/material.dart';
 
 class ADPopUpCloseButton extends StatelessWidget {
@@ -20,11 +21,10 @@ class ADPopUpCloseButton extends StatelessWidget {
         alignment: Alignment.center,
         width: 70,
         height: 44,
-        child: Image.asset(
-          'images/popup_close.png',
-          package: 'doctor_base',
-          width: 24,
-          height: 24,
+        child: Icon(
+          Icons.close,
+          color: ADColors.textBlack,
+          size: 24,
         ),
       ),
     );

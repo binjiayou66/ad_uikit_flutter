@@ -7,16 +7,22 @@ import 'package:flutter/material.dart';
 /// defualt
 /// rich
 ///
+/// title1Primary
+/// title1PrimaryBold
 /// title1Black
 /// title1BlackBold
 /// title1White
 /// title1WhiteBold
 ///
+/// title2Primary
+/// title2PrimaryBold
 /// title2Black
 /// title2BlackBold
 /// title2White
 /// title2WhiteBold
 ///
+/// content1Primary
+/// content1PrimaryBold
 /// content1Black
 /// content1BlackBold
 /// content1Dark
@@ -25,6 +31,8 @@ import 'package:flutter/material.dart';
 /// content1White
 /// content1WhiteBold
 ///
+/// content2Primary
+/// content2PrimaryBold
 /// content2Black
 /// content2BlackBold
 /// content2Dark
@@ -33,6 +41,8 @@ import 'package:flutter/material.dart';
 /// content2White
 /// content2WhiteBold
 ///
+/// tip1Primary
+/// tip1PrimaryBold
 /// tip1Black
 /// tip1BlackBold
 /// tip1Dark
@@ -41,6 +51,8 @@ import 'package:flutter/material.dart';
 /// tip1White
 /// tip1WhiteBold
 ///
+/// tip2Primary
+/// tip2PrimaryBold
 /// tip2Black
 /// tip2BlackBold
 /// tip2Dark
@@ -114,6 +126,78 @@ class ADText extends Text {
           textHeightBehavior: textHeightBehavior,
         );
 
+  ADText.title1Primary(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Primary(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.title1PrimaryBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.title1PrimaryBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
   ADText.title1Black(
     String data, {
     Key? key,
@@ -128,9 +212,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title1Black,
+          style: ADTextStyle.title1Black(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -159,9 +248,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title1BlackBold,
+          style: ADTextStyle.title1BlackBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -190,9 +284,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title1White,
+          style: ADTextStyle.title1White(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -221,9 +320,86 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title1WhiteBold,
+          style: ADTextStyle.title1WhiteBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.title2Primary(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.title2Primary(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.title2PrimaryBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.title2PrimaryBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -252,9 +428,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title2Black,
+          style: ADTextStyle.title2Black(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -283,9 +464,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title2BlackBold,
+          style: ADTextStyle.title2BlackBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -314,9 +500,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title2White,
+          style: ADTextStyle.title2White(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -345,9 +536,86 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.title2WhiteBold,
+          style: ADTextStyle.title2WhiteBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1Primary(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.content1Primary(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content1PrimaryBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.content1PrimaryBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -376,9 +644,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1Black,
+          style: ADTextStyle.content1Black(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -407,9 +680,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1BlackBold,
+          style: ADTextStyle.content1BlackBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -438,9 +716,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1Dark,
+          style: ADTextStyle.content1Dark(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -469,9 +752,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1Gray,
+          style: ADTextStyle.content1Gray(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -500,9 +788,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1Light,
+          style: ADTextStyle.content1Light(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -531,9 +824,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1White,
+          style: ADTextStyle.content1White(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -562,9 +860,86 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content1WhiteBold,
+          style: ADTextStyle.content1WhiteBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2Primary(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.content2Primary(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.content2PrimaryBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.content2PrimaryBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -593,9 +968,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2Black,
+          style: ADTextStyle.content2Black(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -624,9 +1004,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2BlackBold,
+          style: ADTextStyle.content2BlackBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -655,9 +1040,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2Dark,
+          style: ADTextStyle.content2Dark(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -686,9 +1076,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2Gray,
+          style: ADTextStyle.content2Gray(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -717,9 +1112,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2Light,
+          style: ADTextStyle.content2Light(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -748,9 +1148,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2White,
+          style: ADTextStyle.content2White(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -779,9 +1184,86 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.content2WhiteBold,
+          style: ADTextStyle.content2WhiteBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1Primary(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1Primary(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip1PrimaryBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.tip1PrimaryBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -810,9 +1292,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1Black,
+          style: ADTextStyle.tip1Black(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -841,9 +1328,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1BlackBold,
+          style: ADTextStyle.tip1BlackBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -872,9 +1364,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1Dark,
+          style: ADTextStyle.tip1Dark(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -903,9 +1400,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1Gray,
+          style: ADTextStyle.tip1Gray(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -934,9 +1436,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1Light,
+          style: ADTextStyle.tip1Light(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -965,9 +1472,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1White,
+          style: ADTextStyle.tip1White(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -996,9 +1508,86 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip1WhiteBold,
+          style: ADTextStyle.tip1WhiteBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2Primary(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2Primary(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
+          key: key,
+          strutStyle: strutStyle,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          locale: locale,
+          softWrap: softWrap,
+          overflow: overflow,
+          textScaleFactor: textScaleFactor,
+          maxLines: maxLines,
+          semanticsLabel: semanticsLabel,
+          textWidthBasis: textWidthBasis,
+          textHeightBehavior: textHeightBehavior,
+        );
+
+  ADText.tip2PrimaryBold(
+    String data, {
+    Key? key,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+    ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
+  }) : super(
+          data,
+          style: ADTextStyle.tip2PrimaryBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1027,9 +1616,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2Black,
+          style: ADTextStyle.tip2Black(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1058,9 +1652,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2BlackBold,
+          style: ADTextStyle.tip2BlackBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1089,9 +1688,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2Dark,
+          style: ADTextStyle.tip2Dark(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1120,9 +1724,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2Gray,
+          style: ADTextStyle.tip2Gray(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1151,9 +1760,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2Light,
+          style: ADTextStyle.tip2Light(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1182,9 +1796,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2White,
+          style: ADTextStyle.tip2White(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,
@@ -1213,9 +1832,14 @@ class ADText extends Text {
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
     ui.TextHeightBehavior? textHeightBehavior,
+    double? textHeight,
+    TextBaseline? textBaseline,
   }) : super(
           data,
-          style: ADTextStyle.tip2WhiteBold,
+          style: ADTextStyle.tip2WhiteBold(
+            height: textHeight,
+            textBaseline: textBaseline,
+          ),
           key: key,
           strutStyle: strutStyle,
           textAlign: textAlign,

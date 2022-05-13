@@ -1,7 +1,6 @@
 import 'package:ad_uikit_flutter/button/ad_plain_button.dart';
 import 'package:ad_uikit_flutter/color/ad_color.dart';
-import 'package:ad_uikit_flutter/font/ad_font_size.dart';
-import 'package:ad_uikit_flutter/font/ad_font_weight.dart';
+import 'package:ad_uikit_flutter/text_style/ad_text_style.dart';
 import 'package:flutter/material.dart';
 
 class ADPopUpCustomWidget extends StatelessWidget {
@@ -47,7 +46,7 @@ class ADPopUpCustomWidget extends StatelessWidget {
                   ADPlainButton(
                     width: 70,
                     text: leadingTitle ?? '',
-                    textStyle: const TextStyle(fontSize: ADFontSize.content1),
+                    textStyle: ADTextStyle.content1Black(),
                     padding: const EdgeInsets.symmetric(
                         vertical: 16, horizontal: 16),
                     onPressed: () {
@@ -61,21 +60,14 @@ class ADPopUpCustomWidget extends StatelessWidget {
                 child: Text(
                   title ?? '',
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: ADFontSize.title2,
-                    color: ADColors.textBlack,
-                    fontWeight: ADFontWeight.bold,
-                  ),
+                  style: ADTextStyle.title2BlackBold(),
                 ),
               ),
               tail ??
                   ADPlainButton(
                     width: 70,
                     text: tailTitle ?? '',
-                    textStyle: TextStyle(
-                      fontSize: ADFontSize.content1,
-                      color: ADColors.fromValue(0xFF1E8DFF),
-                    ),
+                    textStyle: ADTextStyle.content1Primary(),
                     padding: const EdgeInsets.symmetric(
                         vertical: 16, horizontal: 16),
                     onPressed: () {
